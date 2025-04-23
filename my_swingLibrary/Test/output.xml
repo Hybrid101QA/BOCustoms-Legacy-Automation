@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20221124 21:40:16.305" rpa="false">
+<suite id="s1" name="Test" source="C:\Workspace\my_swingLibrary\Test\Test.robot">
+<test id="s1-t1" name="POC">
+<kw name="Start Application" library="RemoteSwingLibrary">
+<doc>Starts the process in the ``command`` parameter  on the host operating system.
+        The given ``alias`` is stored to identify the started application in RemoteSwingLibrary.</doc>
+<arguments>
+<arg>test-app</arg>
+<arg>javaws C:\\Workspace\\my_swingLibrary\\Test\\twm.jnlp</arg>
+<arg>timeout=60</arg>
+<arg>close_security_dialogs=True</arg>
+</arguments>
+<msg timestamp="20221124 21:40:16.516" level="INFO" html="yes">&lt;a href="C:\Workspace\my_swingLibrary\Test\20221124214016.remoteswinglibrary.out"&gt;Link to stdout&lt;/a&gt;</msg>
+<msg timestamp="20221124 21:40:16.516" level="INFO" html="yes">&lt;a href="C:\Workspace\my_swingLibrary\Test\20221124214016.remoteswinglibrary.err"&gt;Link to stderr&lt;/a&gt;</msg>
+<msg timestamp="20221124 21:40:16.517" level="INFO">-javaagent:"C:\Workspace\lib\remoteswinglibrary-2.3.0.jar"=127.0.0.1:59361:DEBUG:CLOSE_SECURITY_DIALOGS</msg>
+<msg timestamp="20221124 21:40:16.517" level="INFO">Java version &gt; 9: False</msg>
+<msg timestamp="20221124 21:40:16.519" level="INFO">Starting process:
+javaws C:\Workspace\my_swingLibrary\Test\twm.jnlp</msg>
+<msg timestamp="20221124 21:40:57.291" level="INFO">connecting to started application at 127.0.0.1:59383</msg>
+<msg timestamp="20221124 21:40:57.291" level="INFO">waiting for api at 127.0.0.1:59383</msg>
+<msg timestamp="20221124 21:40:57.342" level="INFO">api is ready</msg>
+<msg timestamp="20221124 21:40:57.343" level="INFO">connected to started application at 127.0.0.1:59383</msg>
+<msg timestamp="20221124 21:40:57.343" level="INFO" html="yes">&lt;b&gt;Messages by 'RemoteSwingLibrary registration server thread'&lt;/b&gt;</msg>
+<msg timestamp="20221124 21:40:55.592" level="INFO">Security Warning "Security Warning" was accepted automatically</msg>
+<msg timestamp="20221124 21:40:55.593" level="INFO" html="yes">&lt;a href=""&gt;&lt;img src="." width="800"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221124 21:40:16.516" endtime="20221124 21:40:57.344"></status>
+</kw>
+<kw name="Set Jemmy Timeouts" library="RemoteSwingLibrary">
+<doc>Sets all relevant jemmy timeouts. 
+By default they are all set to 5 seconds.</doc>
+<arguments>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20221124 21:40:57.344" endtime="20221124 21:40:57.349"></status>
+</kw>
+<kw name="Select Main Window" library="RemoteSwingLibrary">
+<doc>Selects the window that was opened first as current context.</doc>
+<status status="PASS" starttime="20221124 21:40:57.349" endtime="20221124 21:40:57.359"></status>
+</kw>
+<kw name="Type Into Text Field" library="RemoteSwingLibrary">
+<doc>Types text into a text component (e.g. text field, password field, text area).
+Same as `Insert Into Textfield` but sends real key events when setting text field contents.
+Useful if application expects real keyboard events instead of only setting the text of the textfield.</doc>
+<arguments>
+<arg>0</arg>
+<arg>EBASCO</arg>
+</arguments>
+<msg timestamp="20221124 21:41:00.150" level="INFO">Error java.lang.ClassNotFoundException: so.biologin.BiometricVerifier</msg>
+<status status="PASS" starttime="20221124 21:40:57.360" endtime="20221124 21:41:00.150"></status>
+</kw>
+<kw name="Type Into Text Field" library="RemoteSwingLibrary">
+<doc>Types text into a text component (e.g. text field, password field, text area).
+Same as `Insert Into Textfield` but sends real key events when setting text field contents.
+Useful if application expects real keyboard events instead of only setting the text of the textfield.</doc>
+<arguments>
+<arg>1</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20221124 21:41:00.151" endtime="20221124 21:41:00.180"></status>
+</kw>
+<kw name="Push Button" library="RemoteSwingLibrary">
+<doc>Uses current context to search for a button and when found, pushes it.</doc>
+<arguments>
+<arg>0</arg>
+</arguments>
+<status status="PASS" starttime="20221124 21:41:00.181" endtime="20221124 21:41:00.191"></status>
+</kw>
+<kw name="Set Jemmy Timeout" library="RemoteSwingLibrary">
+<doc>Sets the jemmy timeout used for waiting a component to appear.
+Timeout names are listed here: http://jemmy.java.net/OperatorsEnvironment.html#timeouts
+Returns the old timeout setting value.</doc>
+<arguments>
+<arg>WindowWaiter.WaitWindowTimeout</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20221124 21:41:00.191" endtime="20221124 21:41:00.194"></status>
+</kw>
+<kw name="List Windows" library="RemoteSwingLibrary">
+<doc>Gets list of open window titles.</doc>
+<msg timestamp="20221124 21:41:00.197" level="INFO">BUREAU OF CUSTOMS - E2M - null (frame1)
+ (frame2)
+BUREAU OF CUSTOMS - E2M (frame3)
+Help (frame4)</msg>
+<status status="PASS" starttime="20221124 21:41:00.194" endtime="20221124 21:41:00.197"></status>
+</kw>
+<kw name="List Components In Context" library="RemoteSwingLibrary">
+<doc>Prints components (their types and their internal names) from the selected context.</doc>
+<arguments>
+<arg>formatted</arg>
+</arguments>
+<msg timestamp="20221124 21:41:00.202" level="INFO">Level: 0 Component: javax.swing.JFrame Index: 0 Name: frame3
+    Level: 1 Component: javax.swing.JRootPane Index: 0 Name: null
+       Level: 2 Component: javax.swing.JPanel Index: 0 Name: null.glassPane
+       Level: 2 Component: javax.swing.JLayeredPane Index: 0 Name: null.layeredPane
+          Level: 3 Component: so.swing.KPanel Index: 1 Name: null
+             Level: 4 Component: javax.swing.JPanel Index: 2 Name: null
+                Level: 5 Component: javax.swing.Box$Filler Index: null Name: null
+                Level: 5 Component: javax.swing.JPanel Index: 3 Name: null
+                   Level: 6 Component: so.swing.KLabel Index: 0 Name: null
+             Level: 4 Component: javax.swing.JPanel Index: 4 Name: null
+                Level: 5 Component: javax.swing.Box$Filler Index: null Name: null
+                Level: 5 Component: javax.swing.JPanel Index: 5 Name: null
+                   Level: 6 Component: so.swing.KLabel Index: 1 Name: null
+                   Level: 6 Component: so.swing.KTextField Index: 0 Name: null
+                   Level: 6 Component: so.swing.KLabel Index: 2 Name: null
+                   Level: 6 Component: so.swing.KPasswordField Index: 1 Name: null
+                Level: 5 Component: javax.swing.Box$Filler Index: null Name: null
+             Level: 4 Component: javax.swing.JPanel Index: 6 Name: null
+                Level: 5 Component: javax.swing.Box$Filler Index: null Name: null
+                Level: 5 Component: javax.swing.JPanel Index: 7 Name: null
+                   Level: 6 Component: so.kernel.client.desktop.DefaultLoginDialogSkin$10 Index: null Name: null
+                   Level: 6 Component: so.swing.KButton Index: 0 Name: null
+                   Level: 6 Component: so.swing.KButton Index: 1 Name: null
+                Level: 5 Component: javax.swing.JPanel Index: 8 Name: null
+                   Level: 6 Component: javax.swing.JLabel Index: 3 Name: null
+                   Level: 6 Component: javax.swing.JPanel Index: 9 Name: null
+                      Level: 7 Component: so.kernel.client.desktop.DefaultLoginDialogSkin$3 Index: 4 Name: null
+                      Level: 7 Component: so.kernel.client.desktop.DefaultLoginDialogSkin$4 Index: 5 Name: null</msg>
+<status status="PASS" starttime="20221124 21:41:00.197" endtime="20221124 21:41:00.202"></status>
+</kw>
+<status status="PASS" starttime="20221124 21:40:16.516" endtime="20221124 21:41:00.202" critical="yes"></status>
+</test>
+<doc>Opening the application</doc>
+<status status="PASS" starttime="20221124 21:40:16.307" endtime="20221124 21:41:00.204"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!-- JNLP File for SOClass Demo Application -->
+<jnlp codebase="http://10.100.12.12:8080/twm" href="twm.jnlp" spec="1.0+">
+  <information>
+      <title>QA Superior Server</title>
+      <vendor>Strategy Object</vendor>
+      <homepage href="http://strategyobject.com"/>
+      <description>SOClass Client Demo Description</description>
+      <description kind="short">This is the SOClass sample client, containing a basic set of demo documents.</description>
+      <description kind="tooltip">SOClass Client Demo Description</description>
+      <icon href="images/image_install.jpg"/>
+      <icon href="images/image_splash.jpg" kind="splash"/>
+  </information>
+  <security>
+      <all-permissions/>
+  </security>
+  <resources>
+    <j2se href="http://java.sun.com/products/autodl/j2se" initial-heap-size="1024m" max-heap-size="4096m" version="1.4+"/>
+	<jar href="lib/admin.jar" main="false"/>
+	<jar href="lib/adminc.jar" main="false"/>
+	<jar href="lib/client.jar" main="true"/>
+	<jar href="lib/core.jar" main="false"/>
+	<jar href="lib/hte.jar" main="false"/>
+	<jar href="lib/htec.jar" main="false"/>
+	<!--<jar href="lib/intrl.jar" main="false"/>
+	<jar href="lib/intrlc.jar" main="false"/>-->
+	<jar href="lib/kswing.jar" main="false"/>
+	<jar href="lib/print.jar" main="false"/>
+	<jar href="lib/server_stub.jar" main="false"/>
+	<jar href="lib/skin.jar" main="false"/>
+	<jar href="lib/slf4j-api.jar" main="false"/>
+	<jar href="lib/sslca.jar" main="false"/>
+	<jar href="lib/te.jar" main="false"/>
+	<jar href="lib/tec.jar" main="false"/>
+	<jar href="lib/types.jar" main="false"/>
+
+	<jar href="lib/ext/aref.jar" main="false"/>
+	<jar href="lib/ext/arefc.jar" main="false"/>
+	<jar href="lib/ext/arefext.jar" main="false"/>
+	<jar href="lib/ext/arefextc.jar" main="false"/>
+	<jar href="lib/ext/arefdbfsspi.jar" main="false"/>
+	<jar href="lib/ext/arefextsdbfs.jar" main="false"/>
+	<jar href="lib/ext/ekp.jar" main="false"/>
+	<jar href="lib/ext/ekpc.jar" main="false"/>
+	<jar href="lib/ext/etp.jar" main="false"/>
+	<jar href="lib/ext/jasperreports-1.2.7.jar" main="false"/>
+	<jar href="lib/ext/joda-time-2.0.jar" main="false"/>
+	<jar href="lib/ext/ktl.jar" main="false"/>
+	<jar href="lib/ext/ktlc.jar" main="false"/>
+	<jar href="lib/ext/rmisec.jar" main="false"/>
+	<jar href="lib/ext/si18n.jar" main="false"/>
+	<jar href="lib/ext/soutil.jar" main="false"/>
+	<jar href="lib/ext/types.jar" main="false"/>
+	<jar href="lib/ext/x509-jndi.jar" main="false"/>
+
+	<jar href="lib/ext/jasperdeps/commons-beanutils-1.9.4.jar" main="false"/>
+	<jar href="lib/ext/jasperdeps/commons-collections-20040616.jar" main="false"/>
+	<jar href="lib/ext/jasperdeps/commons-digester-2.1.jar" main="false"/>
+	<jar href="lib/ext/jasperdeps/commons-logging-1.2.jar" main="false"/>
+	<jar href="lib/ext/jasperdeps/itextpdf-5.5.6.jar" main="false"/>
+	<jar href="lib/ext/jasperdeps/jcommon-1.0.16.jar" main="false"/>
+	<jar href="lib/ext/jasperdeps/jdtcore-3.2.0.v_658.jar" main="false"/>
+	<jar href="lib/ext/jasperdeps/jfreechart-1.0.1.jar" main="false"/>
+	<jar href="lib/ext/jasperdeps/xml-apis-1.3.02.jar" main="false"/>
+
+	<jar href="lib/abms.jar" main="false"/>
+	<jar href="lib/abmsc.jar" main="false"/>
+	<jar href="lib/alert.jar" main="false"/>
+	<jar href="lib/alertc.jar" main="false"/>
+	<jar href="lib/arrsch.jar" main="false"/>
+	<jar href="lib/arrschc.jar" main="false"/>
+	<jar href="lib/asybridge.jar" main="false"/>
+	<jar href="lib/asybridgec.jar" main="false"/>
+	<jar href="lib/cmanifest.jar" main="false"/>
+	<jar href="lib/cmanifestc.jar" main="false"/>
+	<jar href="lib/csad.jar" main="false"/>
+	<jar href="lib/csadc.jar" main="false"/>
+	<jar href="lib/eurm.jar" main="false"/>
+	<jar href="lib/eurmc.jar" main="false"/>
+	<jar href="lib/fesreports.jar" main="false"/>
+	<jar href="lib/fesreportsc.jar" main="false"/>
+	<jar href="lib/gm.jar" main="false"/>
+	<jar href="lib/gmc.jar" main="false"/>
+	<jar href="lib/holdandalert.jar" main="false"/>
+	<jar href="lib/holdandalertc.jar" main="false"/>
+	<jar href="lib/holdandalertreport.jar" main="false"/>
+	<jar href="lib/holdandalertreportc.jar" main="false"/>
+	<jar href="lib/licensing.jar" main="false"/>
+	<jar href="lib/licensingc.jar" main="false"/>
+	<jar href="lib/notification.jar" main="false"/>
+	<jar href="lib/notificationc.jar" main="false"/>
+	<jar href="lib/olrs.jar" main="false"/>
+	<jar href="lib/olrsc.jar" main="false"/>
+	<jar href="lib/olrsreports.jar" main="false"/>
+	<jar href="lib/olrsreportsc.jar" main="false"/>
+	<jar href="lib/payment.jar" main="false"/>
+	<jar href="lib/paymentc.jar" main="false"/>
+	<jar href="lib/pbes.jar" main="false"/>
+	<jar href="lib/pbesc.jar" main="false"/>
+	<jar href="lib/phcprs.jar" main="false"/>
+	<jar href="lib/phcprsc.jar" main="false"/>
+	<jar href="lib/phpayment.jar" main="false"/>
+	<jar href="lib/phpaymentc.jar" main="false"/>
+	<jar href="lib/phreports.jar" main="false"/>
+	<jar href="lib/phreportsc.jar" main="false"/>
+	<jar href="lib/pmtsreports.jar" main="false"/>
+	<jar href="lib/pmtsreportsc.jar" main="false"/>
+	<jar href="lib/replicensing.jar" main="false"/>
+	<jar href="lib/replicensingc.jar" main="false"/>
+	<jar href="lib/reports.jar" main="false"/>
+	<jar href="lib/reportsc.jar" main="false"/>
+	<jar href="lib/rimm.jar" main="false"/>
+	<jar href="lib/rimmc.jar" main="false"/>
+	<jar href="lib/RMLS.jar" main="false"/>
+	<jar href="lib/RMLSc.jar" main="false"/>
+	<jar href="lib/taxation.jar" main="false"/>
+	<jar href="lib/taxationc.jar" main="false"/>
+	<jar href="lib/TransitPermit.jar" main="false"/>
+	<jar href="lib/TransitPermitc.jar" main="false"/>
+	<jar href="lib/twmlib.jar" main="false"/>
+	<jar href="lib/twmlibc.jar" main="false"/>
+	<jar href="lib/vris.jar" main="false"/>
+	<jar href="lib/vrisc.jar" main="false"/>
+	<jar href="lib/wf.common.jar" main="false"/>
+	<jar href="lib/wf.commonc.jar" main="false"/>
+</resources>
+  <application-desc main-class="so.kernel.client.DesktopMain">
+    <argument>http://10.100.12.12:8080/twm/help/</argument>
+    <argument>//10.100.12.12:2006/</argument>
+    <argument>-dout</argument>
+  </application-desc>
+</jnlp>
